@@ -1,0 +1,120 @@
+/* MOBILE FIRST */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 
+font-family: 'Numans', sans-serif;
+font-family: 'Rochester', cursive;
+*/
+/* ------------------------NAV------------------------- */
+.header-line{
+    background: linear-gradient(0deg, #31AEF4 0%, rgba(120, 117, 158, 0.630208) 63.54%, rgba(255, 255, 255, 0) 100%), #3214ED;
+    height: 20px;
+    width: 100%;
+}
+nav{
+    display: block;
+    height: 200px;
+    background-color: black;
+}
+nav a{
+    font-family: 'Rochester', cursive;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    padding-top: 10px;
+    margin-left: calc(50% - 35px);
+}
+/* ------------------------HEADER------------------------- */
+.header-img{
+    background: url("img/about.jpg") center, center;
+    background-size: cover;
+    height: 230px;
+}
+.header-img p{
+    position: relative;
+    top: 180px;
+    right: 40px;
+    float: right;
+    font-family: 'Numans', sans-serif;
+    font-size: 24px;
+    color: white;
+}
+.title{
+    background-color: black;
+    height: 100px;
+    padding: 0 calc(50% - 190px);
+}
+.title h1{
+    color: #19A8F9;
+    text-transform: uppercase;
+    font-family: 'Numans', sans-serif;
+    font-size: 72px;
+    padding-top: 10px;
+}
+/* ------------------------MAIN------------------------- */
+main{
+    padding-bottom: 200px;
+    font-family: 'Numans', sans-serif;
+    font-size: 36px;
+    background-color: #0C0C0C;
+    color: #989898;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+main h3{
+    /* position: relative;
+    left: 33%; */
+    margin-left: calc(50% - 90px);
+    padding-top: 170px;
+}
+main p{
+    margin-top: 110px;
+}
+/* ------------------------FOOTER------------------------ */
+footer{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Numans', sans-serif;
+    background-color: black;
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 135px;
+}
+footer h4{
+    margin-top: 160px;
+    margin-bottom: 70px;
+    font-size:18px;
+}
+footer p, a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+@media screen and (min-width: 800px){
+    /* --------------NAV------------- */
+    nav{
+        display: flex;
+        justify-content: space-around;
+        height: 50px;
+        background-color: black;
+    }
+    nav a{
+        margin-left: 0;
+    }
+    /* -------------MAIN------------- */
+    
+    /* ------------FOOTER------------ */
+    footer{
+        padding-bottom: 0px;
+        min-height: 600px;
+    }
+    footer h4{
+        font-size: 24px;
+    }
+    footer p, a{
+        font-size: 18px;
+    }
+}
